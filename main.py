@@ -1,9 +1,11 @@
+import sys
+print("Welcome to the Calculator")
 try:
     num1 = float(input("enter first number: "))
     num2 = float(input("enter second number: "))
 except ValueError:
     print("error: invalid characters")
-
+    sys.exit()
 
 operation = input("enter your operation (+ (addition), - (subtraction), * (multiplication), / (division)): ")
 
