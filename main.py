@@ -1,12 +1,24 @@
 import sys
+
+valueError = False
+
 print("Welcome to the Calculator")
 
 try:
     num1 = float(input("enter first number: "))
     num2 = float(input("enter second number: "))
 except ValueError:
+    valueError = True
     print("error: invalid characters")
-    sys.exit()
+    
+    while valueError == True:
+        try:
+            num1 = float(input("enter first number: "))
+            num2 = float(input("enter second number: "))
+            valueError = False
+        except ValueError:
+            valueError = True
+            print("error: invalid characters")
 
 operation = input("enter your operation (+ (addition), - (subtraction), * (multiplication), / (division)): ")
 
