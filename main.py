@@ -1,5 +1,6 @@
 import sys
 print("Welcome to the Calculator")
+
 try:
     num1 = float(input("enter first number: "))
     num2 = float(input("enter second number: "))
@@ -11,17 +12,15 @@ operation = input("enter your operation (+ (addition), - (subtraction), * (multi
 
 if operation == "+":
     answer = num1 + num2
-    print(answer)
+    print("Your answer is: " + answer)
 elif operation == "-":
     answer = num1 - num2
-    print(answer)
+    print("Your answer is: " + answer)
 elif operation == "*":
     answer = num1 * num2
-    print(answer)
+    print("Your answer is: " + answer)
 elif operation == "/":
     answer = num1 / num2
-    print(answer)
+    print("Your answer is: " + answer)
 else:
     print("error: invalid operation entered")
-
-
