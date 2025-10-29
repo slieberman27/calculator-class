@@ -12,15 +12,15 @@ operation = input("enter your operation (+ (addition), - (subtraction), * (multi
 
 if operation == "+":
     answer = num1 + num2
-    print("Your answer is: " + answer)
+    print("Your answer is: " + str(answer))
 elif operation == "-":
     answer = num1 - num2
-    print("Your answer is: " + answer)
+    print("Your answer is: " + str(answer))
 elif operation == "*":
     answer = num1 * num2
-    print("Your answer is: " + answer)
+    print("Your answer is: " + str(answer))
 elif operation == "/":
     answer = num1 / num2
-    print("Your answer is: " + answer)
+    print("Your answer is: " + str(answer))
 else:
     print("error: invalid operation entered")
