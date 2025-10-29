@@ -1,6 +1,6 @@
 import sys
 
-valueError = False
+valueError = False #user-defined variable, not calling the error
 
 print("Welcome to the Calculator")
 
